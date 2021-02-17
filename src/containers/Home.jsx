@@ -1,12 +1,19 @@
 import React from 'react';
-import Hello from '@components/Hello';
+import Main from '@components/Main';
+import BackgroundVideo from '@components/BackgroundVideo';
+import Weather from '@components/Weather';
+import Settings from '@components/Settings';
 
 const Home = () => {
-    return (
-        <>
-            <Hello />
-        </>
-    )
+  return (
+    <>
+      <BackgroundVideo />
+      <Main>
+        <Weather />
+        <Settings />
+      </Main>
+    </>
+  )
 }
 
 export default Home;
